@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Bold.otf">
+            <string>SFUIDisplay-Bold</string>
+        </array>
+        <array key="SF-UI-Display-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+        <array key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RateUsView" customModule="BYG" customModuleProvider="target">
+            <connections>
+                <outlet property="rateView" destination="CQa-3S-aHX" id="fhQ-J8-OkD"/>
+                <outlet property="view" destination="iN0-l3-epB" id="CEK-dn-30c"/>
+                <outletCollection property="rateButtons" destination="p37-Bm-KhS" collectionClass="NSMutableArray" id="005-tR-SzJ"/>
+                <outletCollection property="rateButtons" destination="0CE-Kv-zZC" collectionClass="NSMutableArray" id="o5s-zI-SZT"/>
+                <outletCollection property="rateButtons" destination="WCy-yK-2XB" collectionClass="NSMutableArray" id="5rP-pw-AE9"/>
+                <outletCollection property="rateButtons" destination="SsC-BS-IQ5" collectionClass="NSMutableArray" id="W3E-dc-2kg"/>
+                <outletCollection property="rateButtons" destination="hHm-dm-J9O" collectionClass="NSMutableArray" id="DhB-wW-DKX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hFj-a5-s0N">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQa-3S-aHX">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rate_session" translatesAutoresizingMaskIntoConstraints="NO" id="1av-A3-Jwh"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SKq-Fo-a9s">
+                            <subviews>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p37-Bm-KhS">
+                                    <state key="normal" image="star_grey"/>
+                                    <state key="selected" image="star_red"/>
+                                    <connections>
+                                        <action selector="rateButtonAction:" destination="-1" eventType="touchUpInside" id="bV9-lN-TJc"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0CE-Kv-zZC">
+                                    <state key="normal" image="star_grey"/>
+                                    <state key="selected" image="star_red"/>
+                                    <connections>
+                                        <action selector="rateButtonAction:" destination="-1" eventType="touchUpInside" id="mda-w4-OQm"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCy-yK-2XB">
+                                    <state key="normal" image="star_grey"/>
+                                    <state key="selected" image="star_red"/>
+                                    <connections>
+                                        <action selector="rateButtonAction:" destination="-1" eventType="touchUpInside" id="YzL-7l-RFO"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SsC-BS-IQ5">
+                                    <state key="normal" image="star_grey"/>
+                                    <state key="selected" image="star_red"/>
+                                    <connections>
+                                        <action selector="rateButtonAction:" destination="-1" eventType="touchUpInside" id="Bed-25-w6i"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHm-dm-J9O">
+                                    <state key="normal" image="star_grey"/>
+                                    <state key="selected" image="star_red"/>
+                                    <connections>
+                                        <action selector="rateButtonAction:" destination="-1" eventType="touchUpInside" id="CAp-5c-9Js"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="Uxx-hM-0SU"/>
+                            </constraints>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alK-Fx-QQT">
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.16862745100000001" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="fOd-xC-1Uu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="16"/>
+                            <state key="normal" title="Rate us">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="rateUsButtonAction:" destination="-1" eventType="touchUpInside" id="q4s-NT-jw2"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Love using BYG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaL-kq-VKc">
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Bold" family="SF UI Display" pointSize="15"/>
+                            <color key="textColor" red="0.93333333330000001" green="0.16862745100000001" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate us on appstore now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKx-g3-RLC">
+                            <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="alK-Fx-QQT" firstAttribute="top" secondItem="SKq-Fo-a9s" secondAttribute="bottom" constant="38" id="624-Fp-jgO"/>
+                        <constraint firstItem="SKq-Fo-a9s" firstAttribute="top" secondItem="rKx-g3-RLC" secondAttribute="bottom" constant="29" id="Cl6-79-vkI"/>
+                        <constraint firstItem="rKx-g3-RLC" firstAttribute="centerX" secondItem="OaL-kq-VKc" secondAttribute="centerX" id="FPF-Ix-8Wk"/>
+                        <constraint firstItem="alK-Fx-QQT" firstAttribute="leading" secondItem="CQa-3S-aHX" secondAttribute="leading" id="FRd-F4-wMH"/>
+                        <constraint firstItem="rKx-g3-RLC" firstAttribute="top" secondItem="OaL-kq-VKc" secondAttribute="bottom" constant="8" id="J9M-RJ-IoT"/>
+                        <constraint firstItem="1av-A3-Jwh" firstAttribute="top" secondItem="CQa-3S-aHX" secondAttribute="top" constant="21" id="PZd-Is-4eS"/>
+                        <constraint firstItem="SKq-Fo-a9s" firstAttribute="leading" secondItem="CQa-3S-aHX" secondAttribute="leading" constant="10" id="Tm1-3u-Av6"/>
+                        <constraint firstAttribute="bottom" secondItem="alK-Fx-QQT" secondAttribute="bottom" id="XgU-hW-MAy"/>
+                        <constraint firstItem="OaL-kq-VKc" firstAttribute="top" secondItem="1av-A3-Jwh" secondAttribute="bottom" constant="13" id="bRv-i9-02S"/>
+                        <constraint firstItem="1av-A3-Jwh" firstAttribute="centerX" secondItem="CQa-3S-aHX" secondAttribute="centerX" id="e9k-Qs-tzg"/>
+                        <constraint firstAttribute="trailing" secondItem="SKq-Fo-a9s" secondAttribute="trailing" constant="10" id="iyM-yk-Hr8"/>
+                        <constraint firstItem="SKq-Fo-a9s" firstAttribute="centerX" secondItem="CQa-3S-aHX" secondAttribute="centerX" id="o95-cT-Nt7"/>
+                        <constraint firstAttribute="trailing" secondItem="alK-Fx-QQT" secondAttribute="trailing" id="waD-3g-fx5"/>
+                        <constraint firstItem="OaL-kq-VKc" firstAttribute="centerX" secondItem="1av-A3-Jwh" secondAttribute="centerX" id="y6f-xF-SU7"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dU6-yN-8WJ">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="mtG-Uw-p7H"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                    <state key="normal" title="Not now!">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="notNowButtonAction:" destination="-1" eventType="touchUpInside" id="ds4-nK-BvP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dU6-yN-8WJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="34" id="6oC-P5-xVr"/>
+                <constraint firstAttribute="trailing" secondItem="dU6-yN-8WJ" secondAttribute="trailing" constant="33" id="GFI-mt-kr4"/>
+                <constraint firstItem="CQa-3S-aHX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="34" id="KGo-JT-yBg"/>
+                <constraint firstItem="hFj-a5-s0N" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="O75-5E-08i"/>
+                <constraint firstItem="hFj-a5-s0N" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="adp-Pe-6gh"/>
+                <constraint firstAttribute="trailing" secondItem="CQa-3S-aHX" secondAttribute="trailing" constant="33" id="f31-cQ-EZc"/>
+                <constraint firstItem="CQa-3S-aHX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="k09-eK-w1G"/>
+                <constraint firstItem="dU6-yN-8WJ" firstAttribute="top" secondItem="CQa-3S-aHX" secondAttribute="bottom" id="tdK-uZ-fh4"/>
+                <constraint firstAttribute="trailing" secondItem="hFj-a5-s0N" secondAttribute="trailing" id="uia-oE-Jhj"/>
+                <constraint firstAttribute="bottom" secondItem="hFj-a5-s0N" secondAttribute="bottom" id="urh-NN-exW"/>
+                <constraint firstItem="CQa-3S-aHX" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wtl-ol-lA2"/>
+            </constraints>
+            <point key="canvasLocation" x="236.5" y="250.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="rate_session" width="100" height="100"/>
+        <image name="star_grey" width="23" height="22"/>
+        <image name="star_red" width="23" height="22"/>
+    </resources>
+</document>
